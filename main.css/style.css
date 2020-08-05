@@ -1,0 +1,157 @@
+/*  Add your styling here */
+
+/************Header***********/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Thasadith', sans-serif;
+    background-color: #8a817c;
+}
+header img {
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 10px ;
+    width: 40%;
+    border-radius: 50%;
+}
+.nav {
+    display: flex;
+    margin: 12px;
+}
+.nav ul {
+    display: flex;
+    flex-direction:row;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.nav li {
+    margin: 5px;
+    border-bottom: solid #87556f;
+    border-width: thin;
+}
+.nav a {
+    text-decoration: none;
+    color:#322f3d;
+    font-size: 15px;
+    font-weight: bold;
+}
+/********** Slider **********/
+
+#slider figure img {
+    float: left;
+    width: 20%; 
+    height: 460px;
+    border-radius: 1%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#slider {
+    overflow: hidden;
+}
+#slider figure {
+    position: relative;
+    animation: slide;
+    width: 500%;
+    animation: slider 10s infinite;
+}
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    10% {
+        left: 0 ;
+    }
+    20% {
+        left: -100%;
+    }
+    30% {
+        left: -100%;
+    }
+    40% {
+        left: -200%;
+    }
+    50% {
+        left: -200%;
+    }
+    60% {
+        left: -300%;
+    }
+    70% {
+        left: -300%;
+    }
+    80% {
+        left: -400%;
+    }
+    90% {
+        left: -400%;
+    }
+    100% {
+        left: 0;
+    }
+}
+/************** Vegan Section**************/
+.vegan {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 30px;
+    max-width: 96%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.smallSections {
+    padding: 15px;
+    justify-content: center;
+    border: solid #4b5d67;
+    border-style: double;
+    margin-bottom: 5px;
+}
+.smallSections img {
+    width: 90%;
+    height: 370px;
+    padding-left: 10px;
+    padding-right: 10;
+    margin-right: 10px;
+    margin-left: 6px;
+    justify-content: center;
+}
+.vegan h3 {
+    font-size: 22px;
+    text-align: center;
+    color: #4b5d67;
+}  
+/************ Social & Footer *************/
+.social {
+    display: flex;
+    flex-direction:column;
+}
+.social ul {
+    list-style: none;
+    display: flex;
+    flex-direction: raw;
+    justify-content: space-evenly;
+    margin-top: 18px;
+}
+.social img {
+    width: 50px;
+}
+.social h2 {
+    text-align: center;
+    color: #87556f;
+}
+footer {
+    height: 30%;
+    text-align: center;
+    background-color: #322f3d;
+    margin-top: 15px;
+}
+footer p {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    font-size: 13px;
+    color: #4b5d67;
+    background-color:transparent ;
+}
