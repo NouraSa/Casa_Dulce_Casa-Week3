@@ -20,6 +20,8 @@ header img {
 .nav {
     display: flex;
     margin: 12px;
+    align-items: center;
+    justify-content: center;
 }
 .nav ul {
     display: flex;
@@ -93,6 +95,18 @@ header img {
     }
 }
 /************** Vegan Section**************/
+
+p {
+    text-align: center;
+    text-decoration: underline #4b5d67;
+    padding: 10px;
+    height: 30px;
+    color: #59405c;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1em;
+}
+
 .vegan {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -126,14 +140,18 @@ header img {
 .social {
     display: flex;
     flex-direction:column;
+    width: 80%;
+    align-content: center;
+    margin: auto;
 }
 .social ul {
     list-style: none;
     display: flex;
     flex-direction: raw;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 18px;
 }
+
 .social img {
     width: 50px;
 }
@@ -142,16 +160,85 @@ header img {
     color: #87556f;
 }
 footer {
-    height: 30%;
+    height: 50px;
     text-align: center;
     background-color: #322f3d;
-    margin-top: 15px;
+    margin: auto;
 }
 footer p {
     display: inline-block;
-    margin: 10px;
-    padding: 5px;
     font-size: 13px;
-    color: #4b5d67;
+    color:#f2e9e4;
     background-color:transparent ;
+}
+
+/****** Media Queries***********/ 
+
+@media screen and (min-width:450px) { 
+    header img {
+        width: 350px;
+    }   
+    #slider figure img {
+        height: 990px;
+    }
+    .nav li {
+        margin: 25px;
+        border-width: 3px;
+        text-decoration: dotted;
+    }
+    .nav a {
+        font-size: 26px;
+    }
+    .vegan {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 25px;
+        max-width: 98%;
+        height: 450px;
+    }
+    footer {
+        text-align: center;
+        background-color: #322f3d;
+        margin-top: 15px;
+    }
+    footer p {
+        display: inline-block;
+        margin: 10px;
+        padding: 5px;
+        font-size: 16px;
+        color: #f2e9e4;
+        background-color:transparent ;
+    }
+    .social ul {
+        justify-content: center;
+    }
+    .social li {
+        margin: 15px;
+    }
+}
+
+@media screen and (min-width:1100px) {
+
+#slider figure img {
+    height: 998px;
+}
+P {
+    font-size: 30px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.vegan {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 25px;
+    max-width: 98%;
+    height: 600px;
+}
+.vegan img {
+    height: 550px;
+}
 }
